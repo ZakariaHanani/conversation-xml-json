@@ -1,0 +1,20 @@
+{"LaTerre": [
+  {"Couche": [{"sousCouche": [
+    {"sous_sousCouche": []},
+    {"sous_sousCouche": [{"composant": ["Granite"]}]}
+  ]}]},
+  {"Couche": [
+    {"sousCouche": [
+      {"composant": ["Olivine"]},
+      {"composant": ["Pyroxyene"]}
+    ]},
+    {"sousCouche": [{"composant": ["Pyroxyene"]}]}
+  ]},
+  {"Couche": [
+    {"sousCouche": [
+      {"composant": ["Fer"]},
+      {"composant": ["Nickel"]}
+    ]},
+    {"sousCouche": [{"composant": ["Fer"]}]}
+  ]}
+]}

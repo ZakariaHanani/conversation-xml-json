@@ -1,0 +1,62 @@
+{"LaTerre": [
+  {
+    "Couche": [{
+      "@nom": "La croute terrestre",
+      "sousCouche": [
+        {
+          "@nom": "La croute oceanique",
+          "@densite": "3",
+          "sous_sousCouche": [],
+          "@eppaisseur": "6km"
+        },
+        {
+          "@nom": "La croute continentale",
+          "@densite": "2.7",
+          "sous_sousCouche": [{"composant": ["Granite"]}],
+          "@eppaisseur": "35km"
+        }
+      ]
+    }],
+    "@nom": "exterieur"
+  },
+  {
+    "Couche": [
+      {
+        "@nom": "manteau superieur",
+        "@densite": "3.3",
+        "sousCouche": [
+          {"composant": ["Olivine"]},
+          {"composant": ["Pyroxyene"]}
+        ],
+        "@eppaisseur": "650km"
+      },
+      {
+        "@nom": "manteau inferieur",
+        "@densite": "6",
+        "sousCouche": [{"composant": ["Pyroxyene"]}],
+        "@eppaisseur": "2200km"
+      }
+    ],
+    "@nom": "inferieur"
+  },
+  {
+    "Couche": [
+      {
+        "@nom": "noyau externe",
+        "@densite": "10",
+        "sousCouche": [
+          {"composant": ["Fer"]},
+          {"composant": ["Nickel"]}
+        ],
+        "@eppaisseur": "200km"
+      },
+      {
+        "@nom": "noyau intern",
+        "@densite": "13",
+        "sousCouche": [{"composant": ["Fer"]}],
+        "@eppaisseur": "1200km"
+      }
+    ],
+    "@nom": "noyau"
+  }
+]}

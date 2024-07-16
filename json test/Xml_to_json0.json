@@ -1,0 +1,9 @@
+{"Couche": {
+  "@nom": "noyau",
+  "sousCouche": {
+    "@nom": "noyau intern",
+    "@densite": "13",
+    "composant": "Fer",
+    "@eppaisseur": "1200km"
+  }
+}}

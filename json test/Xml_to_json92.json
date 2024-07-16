@@ -1,0 +1,13 @@
+{
+  "entries": {"entry": {
+    "phone": {"06 08 08 08 08": 1},
+    "city": {"Madrid": 1},
+    "name": {
+      "midle": {"hanani": 1},
+      "last": {"Vallejo": 1},
+      "first": {"zakaria": 1}
+    }
+  }},
+  "title": {"\nbalabla blala\n": 1},
+  "@noNamespaceSchemaLocation": "file:///C:/Users/zekoh/Desktop/TP%20XML/phonenumbers.xsd"
+}

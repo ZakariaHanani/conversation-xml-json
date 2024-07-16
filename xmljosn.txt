@@ -1,0 +1,45 @@
+import org.jdom.Attribute;
+import org.jdom.Element;
+import org.json.JSONException;
+import org.json.JSONObject;
+import java.util.List;
+
+public abstract class  XmlJson {
+    public static JSONObject xmltojson(Element element) throws JSONException {
+
+        //Creer un object json pour Stocker les les informations extraites
+        JSONObject jsonObject =new JSONObject() ;
+
+
+        //extraiter les attrebutes
+        List<Attribute> attributes = element.getAttributes();
+        /*for (Attribute attrObj : attributes) {
+            org.jdom.Attribute attribute = (org.jdom.Attribute) attrObj;
+            jsonObject.put("@" + attribute.getName(), attribute.getValue());
+        }*/
+
+        if(!attributes.isEmpty()) {
+            for (Attribute attribute : attributes) {
+                jsonObject.put("@" + attribute.getName(), attribute.getValue());
+            }
+        }
+
+        // extraiter les les balises
+        List<Element> children =element.getChildren() ;
+            if (!children.isEmpty()) {
+                for (Element child : children) {
+                   // if(!child.getChildren().isEmpty()){
+                    jsonObject.put(child.getName(), xmltojson(child));
+                   //}
+                    //else jsonObject.put(child.getName(),child.getChildText(child.getName()));}
+            }}
+               else  {
+
+        // Ajoute la valeur du texte s'il n'y a pas d'enfants
+                jsonObject.put("#", element.getText());
+
+
+    }
+        return jsonObject ;
+    }}
+

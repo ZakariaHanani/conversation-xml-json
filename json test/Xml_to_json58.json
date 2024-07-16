@@ -1,0 +1,17 @@
+{"quiz": [
+  {"Question": [{"q1": [
+    {
+      "reponse": "premier reponse",
+      "@valeur": "true"
+    },
+    {
+      "reponse": "deuxième reponse",
+      "@valeur": "false"
+    },
+    {
+      "reponse": "troisième reponse",
+      "@valeur": "true"
+    }
+  ]}]},
+  {"ScoreTotal": "45"}
+]}

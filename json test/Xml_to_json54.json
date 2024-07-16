@@ -1,0 +1,16 @@
+{
+  "real-estate": [
+    {"agencies": [
+      {"name": ""},
+      {"e-mail": ""},
+      {"phone": ""}
+    ]},
+    {"owners": [{"name": ""}]},
+    {"flats": [
+      {"name": ""},
+      {"description": ""},
+      {"rate": ""}
+    ]}
+  ],
+  "@noNamespaceSchemaLocation": "file:///C:/Users/zekoh/Desktop/TP%20XML/real-estate.xsd"
+}

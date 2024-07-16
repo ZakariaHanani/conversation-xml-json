@@ -1,0 +1,15 @@
+{
+  "phonenumbers": [
+    {"title": "balabla blala"},
+    {"entries": [{"entry": [
+      {"name": [
+        {"first": "zakaria"},
+        {"midle": "hanani"},
+        {"last": "Vallejo"}
+      ]},
+      {"phone": "06 08 08 08 08"},
+      {"city": "Madrid"}
+    ]}]}
+  ],
+  "@noNamespaceSchemaLocation": "file:///C:/Users/zekoh/Desktop/TP%20XML/phonenumbers.xsd"
+}

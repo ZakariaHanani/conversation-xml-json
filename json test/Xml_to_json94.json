@@ -1,0 +1,26 @@
+{"stock": [
+  {
+    "voiture": [
+      {"modele": "Audi A4"},
+      {"prix": "35000$"}
+    ],
+    "@type": "nauve"
+  },
+  {
+    "voiture": [
+      {"modele": "BMW X5"},
+      {"prix": "25000$"},
+      {"kilometrage": "50 000km"},
+      {"etat": "Bon"}
+    ],
+    "@type": "occasion"
+  },
+  {
+    "voiture": [
+      {"modele": "Mercedes C-class"},
+      {"prix": "20000$"},
+      {"kilometrage": "50 000km"}
+    ],
+    "@type": "occasion"
+  }
+]}

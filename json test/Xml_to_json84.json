@@ -1,0 +1,17 @@
+{
+  "flats": {
+    "rate": {"#": "10/10"},
+    "name": {"#": "zikox"},
+    "description": {"#": "Hala madrid"}
+  },
+  "agencies": {
+    "phone": {"#": "06 08 08 08 08 "},
+    "name": {"#": "zakaria"},
+    "e-mail": {"#": "ziko@hotmail.com"}
+  },
+  "owners": {
+    "@type": "good",
+    "name": {"#": "ayoub"}
+  },
+  "@noNamespaceSchemaLocation": "file:///C:/Users/zekoh/Desktop/TP%20XML/real-estate.xsd"
+}

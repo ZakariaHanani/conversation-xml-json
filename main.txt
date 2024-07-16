@@ -1,0 +1,67 @@
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.input.SAXBuilder;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.*;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) throws IOException, JSONException, JDOMException {
+        Scanner input = new Scanner(System.in) ;
+
+        /*---------------  selectionner le fichier xml ------------------ */
+
+        //System.out.println("------> importer file xml path "+input.nextLine());
+        //String filename = input.nextLine();
+        String link ="real-estate.xml" ;
+
+        /*--------------- parcourer le fichier  ------------------ */
+        /*
+        javax.xml.parsers.DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+        org.w3c.dom.Document domDocument = dBuilder.parse(xmlFile);
+        DOMBuilder domBuilder = new DOMBuilder();
+        Document jdomDocument = domBuilder.build(domDocument);
+        */
+        SAXBuilder build = new SAXBuilder();
+        Document xml =build.build(new File(link));
+        //doc doc = xml
+
+        Element root =xml.getRootElement();
+       /*
+        BufferedReader br = new BufferedReader(new FileReader(link));
+        line = br.readLine() ;
+        while (line  != null)
+        {
+
+        ----------------Stocker dans un variable String ----------------
+            str+=line;
+            line = br.readLine();
+
+        }*/
+        /*----------------  Convertir en Json ------------------ */
+
+        JSONObject jsondata =XmlJson.xmltojson(root);
+        String str1= jsondata.toString(2) ;
+
+        /*----------------  Enrgistrer le fichier Json ----------------*/
+        Random rand = new Random();
+        int i= rand.nextInt(100);
+        BufferedWriter output =new BufferedWriter(new FileWriter("Xml_to_json"+i+".json"));
+        output.write(str1);
+
+        /*-------------------------------------------------------------*/
+
+        output.flush();
+        output.close();
+        input.close();
+
+        System.out.println("<----------------------------------> ");
+        System.out.println(str1);
+
+
+    }
+}
